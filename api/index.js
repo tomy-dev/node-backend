@@ -3,7 +3,7 @@ const cors = require('cors');
 const port = process.env.PORT || 8080;
 const app = express();
 app.use(express.json());
-const witheList = ['http://localhost:8080', 'https://myapp.co'];
+const witheList = ['http://localhost:8080', 'https://node-backend-woad-beta.vercel.app/'];
 const corsOptions = {
     origin: function (origin, callback) {
         if (witheList.includes(origin) || !origin) {
